@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="{% static 'css/korz.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'jsssss.js' %}"></script>
+</head>
+<body>
+    <table>
+        {% for one in items %}
+            <tr>
+                <td>{{ one.rybalka.opis }}</td>
+                <td>{{ one.count }}шт</td>
+                <td>{{ one.summa }}р</td>
+                <td>
+                    <a href="{%  url 'del' one.id %}">
+                        <button>удалить</button>
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <h2>Сумма {{ itog }}
+        <br>
+    <button id="buyButton">Купить</button>
+    <div id="purchaseMessage" style="display: none;">
+    <p>Спасибо за покупку! Ваш заказ успешно оформлен.</p>
+    </div>
+
+
+</body>
+</html>

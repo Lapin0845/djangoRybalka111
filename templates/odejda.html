@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Одежда</title>
+    <link rel="stylesheet" href="{% static 'css/odejda.css' %}">
+</head>
+<header>
+    <img src="https://sun9-25.userapi.com/c834101/v834101940/126710/__-D_wVnjvc.jpg" width="60%" height="40%">
+        {% block menu %}
+        <nav>
+  <a href="{% url 'home' %}">Главная</a>
+  <a href="{% url 'rybalka' %}">Рыбалка</a>
+  <a href="{% url 'ohota' %}">Охота</a>
+  <a href="{% url 'odejda' %}">Одежда</a>
+  <a href="{% url 'about' %}">О нас</a>
+  <div class="animation start-home"></div>
+</nav>
+        {% endblock menu %}
+</header>
+<body>
+{% for one in odejda %}
+    <main>
+        <div class="card">
+            <img src="{% static one.image %}" alt="" width="60%" height="40%">
+            <h2>{{ one.opis }}</h2>
+            <h4>{{ one.price }} руб.</h4>
+            <br>
+            <a href="{% url 'buy3' one.id %}">
+            <button>Купить</button>
+            </a>
+        </div>
+    </main>
+{% endfor %}
+
+</body>
+</html>

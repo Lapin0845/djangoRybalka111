@@ -1,0 +1,28 @@
+body{
+    background-color: dimgray;
+}
+form, table{
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid black;
+    width: 40%;
+    margin: 150px;
+    left: 300px;
+    background-color: dimgray;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: white 10px 10px 20px 20px;
+}
+
+td a{
+    text-decoration: none;
+    color: red;
+    width: 10%;
+}
+tr{
+    background-color: dimgray;
+}
+input{
+    margin: 10px;
+    text-align: center;
+}
+

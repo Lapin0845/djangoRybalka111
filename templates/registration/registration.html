@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="{% static 'css/regis.css' %}">
+</head>
+<body>
+{% block content %}
+    <form action="" method="post" novalidate>
+        {% csrf_token %}
+        <table>
+            {% for one in regform %}
+                <div>{{ one.label_tag }}</div>
+                <div> {{ one }}</div>
+                <div> {{ one.errors }}</div>
+            {% endfor %}
+        </table>
+    <input type="submit" value="отправить">
+    </form>
+{% endblock %}
+</body>
+</html>

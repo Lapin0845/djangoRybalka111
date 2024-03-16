@@ -1,0 +1,49 @@
+body{
+    background-color: dimgray;
+}
+
+
+.text a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    background-color: gray;
+    width: 130px;
+    border: black 2px solid;
+    border-radius: 4px;
+    margin-bottom: 55px;
+}
+.text a:hover{
+    color: white;
+    border: white 2px solid;
+}
+
+button{
+    width: 100px;
+    color: red;
+}
+
+
+nav{
+    text-decoration: none;
+    font-size: 2em;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    border: black 2px solid;
+    margin-bottom: 5px;
+}
+nav a:hover{
+    color: white;
+    border: white 2px solid;
+}
+
+img{
+    border:  7px outset rgba(40,  40,  37, 1);
+}
+
+

@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+p{
+
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    line-height: 1em;
+    margin: 50px;
+
+}
+
+ul{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.text{
+    background-color: black;
+    border: white 3px solid;
+    border-radius: 5px;
+    margin-top: 10px;
+}

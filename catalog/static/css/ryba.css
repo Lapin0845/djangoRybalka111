@@ -1,0 +1,57 @@
+nav{
+    text-decoration: none;
+    font-size: 2em;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    border: black 2px solid;
+    margin-bottom: 5px;
+}
+nav a:hover{
+    color: white;
+    border: white 2px solid;
+}
+
+body{
+    background-color: dimgray;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 2px solid white;
+    margin: 50px;
+    background-color: black;
+    width: 25%;
+    height: 25%;
+    margin-left: 35%;
+
+
+}
+
+h2, h4{
+    color: white;
+    margin-left: 10px;
+}
+card{
+    width: 100px;
+}
+
+img{
+    width: 100%;
+    height: 50%;
+}
+
+
+button{
+    width: 100px;
+}
+
+button:hover{
+    border: 3px solid white;
+    background-color: gray;
+}
